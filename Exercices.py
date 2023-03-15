@@ -74,4 +74,42 @@ print("Le prix hors taxe (PHT) est : ", pht)
 print("Le taxe sur la valeur ajoutée (TVA) est : ", tva)
 print("Le prix toutes taxes comprises (PTTC) est : ", pttc)
 
+    # 10. Ecrire un algorithme qui permet de calculer la somme a payé (sp). 
+
+Q = int(input("Combien de quantités de bouteilles : "))
+pu = float(input("Le prix unitaire : "))
+tc = Q * pu
+trans = tc * 0.10
+sp = trans + tc
+
+print("Le total de la commande est : ", tc)
+
+if tc > 500:
+    print("Le transport est gratuit!!")
+else:
+    print("Tu doit ajouter 10% ""de TC pour le transport, dont la somme a payé sera : ", sp)
+
+
+    # 11. Écrire un algorithme qui lit deux valeurs entières (A et B) au clavier et qui affiche le signe de la somme de A et B sans faire l'addition. 
+
+A = int(input("Entrez la valeur de A : "))
+B = int(input("Entrez la valeur de B : "))
+
+if A >= 0 and B >= 0:
+    print("La somme de A et B est positive")
+elif A < 0 and B < 0:
+    print("La somme de A et B est négative")
+else:
+    print("La somme de A et B est nulle")
+
+
+    # 12. Écrire un algorithme qui affiche la valeur absolue d’un nombre 
+    
+number = float(input("Entrer un nombre : "))
+
+if number < 0:
+    print("La valeur absolu du nombre", number, "est : ", -number)
+else:
+    print("La valeur absolu du nombre", number, "est : ", number)
+
 
