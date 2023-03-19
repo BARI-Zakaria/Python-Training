@@ -36,7 +36,7 @@ Z = temp
 print("Nouvelles valeurs : X =", X, ", Y =", Y, ", Z =", Z)
 
 
-    # 8. A la fin d’année, pour chaque étudiant doit avoir deux notes : note écrite (ne) de coefficient 5 et noteorale (no) de coefficient 3. Ecrire un algorithme qui permet de calculer la moyenne et d’afficher l’un des résultats suivantes : « Admis » ou « Echoué »
+#     # 8. A la fin d’année, pour chaque étudiant doit avoir deux notes : note écrite (ne) de coefficient 5 et noteorale (no) de coefficient 3. Ecrire un algorithme qui permet de calculer la moyenne et d’afficher l’un des résultats suivantes : « Admis » ou « Echoué »
 
 NEcrite = float(input("Entrer la note écrite :"))*5
 NOrale = float(input("Entrer la note orale :"))*3
@@ -112,4 +112,30 @@ if number < 0:
 else:
     print("La valeur absolu du nombre", number, "est : ", number)
 
+    # 13. Écrire un algorithme qui permet la résolution d’une équation du premier degré (une équation  sous la forme ax+b=0) 
+a = float(input("Entrez la valeur de a : "))
+b = float(input("Entrez la valeur de b : "))
 
+if a == 0:
+    if b == 0:
+        print("L'équation a une infinité de solutions")
+    else:
+        print("L'équation n'a pas de solution")
+else:
+    x = -b/a
+    print("La solution de l'équation est x =", x)
+
+    # 15.Ecrire un a lgorithme qui range trois nombres donné x, y, z, dans l'ordre croissant (x < y < z). 
+
+x = float(input("Entrez la valeur de x : "))
+y = float(input("Entrez la valeur de y : "))
+z = float(input("Entrez la valeur de z : "))
+
+if x > y:
+    x, y = y, x
+if y > z:
+    y, z = z, y
+if x > y:
+    x, y = y, x
+
+print("Les nombres dans l'ordre croissant sont :", x, y, z)
