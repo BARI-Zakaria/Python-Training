@@ -10,10 +10,12 @@ chasseurInfos = {   "name" : "nomChasseur",
                     "capital" : 100, 
                     "cout" : 200,
                      "victimes" : 
-                        {"poule" : 1, 
-                        "chien" : 3, 
-                        "vache" : 5, 
-                        "ami" : 10}
+                        {
+                            "poule" : 1, 
+                            "chien" : 3, 
+                            "vache" : 5, 
+                            "ami" : 10
+                        }
                 }
 
 chasseurInfos["name"] = input("nom chasseur : ")
