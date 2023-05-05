@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-
+import glob
         #   TO GET YOUR LOCAL LOCATION
 print(os.getcwd())
 
@@ -34,8 +34,6 @@ print(os.stat('osModel.py').st_size) #SPECIFIED
 
         #   TURN THE 'st_mtime' TO THE NORMAL FORMAT
 
-from datetime import datetime
-
 time = os.stat('osModel.py').st_mtime
 print(datetime.fromtimestamp(time))
 
@@ -46,4 +44,25 @@ for dirpath, dirnames, filenames in os.walk(paTH):
         print('Directories :', dirnames)
         print('Files :', filenames)
 
+
+
+import os
+import glob
+import shutil
+
+
+mySet=set()
+pathA = "C:\\Users\\Zakaria\\Desktop\\BB"
+test = glob.glob1(pathA, '*.*')
+# print(test)
+
+mySet.update(test)
+print(mySet)
+
+for dirpath, dirnames, filenames in os.walk(pathA):
+    for exten in filenames:
+        # if exten == ""
+        extenstion = os.path.splitext(exten)[1]
+        if extenstion in mySet:
+            shutil.copyfile()
 
