@@ -27,4 +27,3 @@ for exts in mySet:
             else:
                 print("No files to move!!")
                 break
-
