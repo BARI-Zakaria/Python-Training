@@ -1,5 +1,5 @@
 import os
-
+import subprocess
 # def Somme(mob = list()):
 #     print("Somme",mob)
 #     Somme = sum(mob)
@@ -24,18 +24,22 @@ import os
 # print(n)
 
     #  GET THE SOMME OF THE SAME EXTENSION FILES SIZE 
-Path = r'C:\Users\Zakaria\Desktop\Régional\ExercicesPython'
-MyDic = dict()
+# Path = r'C:\Users\Zakaria\Desktop\Régional\ExercicesPython'
+# MyDic = dict()
 
-for dirpath, dirnames, filenames in os.walk(Path):
-    for files in filenames:
-        split = os.path.splitext(files)[1][1:]
-        joinPath = os.path.join(Path, files)
-        FileSize = os.path.getsize(joinPath)
-        if split in MyDic:
-            MyDic[split] += FileSize
-        else:
-            MyDic[split] = FileSize   
-print(MyDic)
+# for dirpath, dirnames, filenames in os.walk(Path):
+#     for files in filenames:
+#         split = os.path.splitext(files)[1][1:]
+#         joinPath = os.path.join(Path, files)
+#         FileSize = os.path.getsize(joinPath)
+#         if split in MyDic:
+#             MyDic[split] += FileSize
+#         else:
+#             MyDic[split] = FileSize   
+# print(MyDic)
 
+    # SUBPROCESS DISPLAY RESULT OF A COMMAND LINE WINDOWS WICH IS NOT BUILD IN PYHTON§§
+SkutLeMok = subprocess.run("ipconfig", shell=True, text=True, capture_output=True)
+# print(SkutLeMok.stderr)
+print(SkutLeMok.stdout)
 
