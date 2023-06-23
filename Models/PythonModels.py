@@ -94,11 +94,14 @@ P1 = subprocess.run("command" , shell=True , capture_outure=True , text=True)
 print(P1.stdout)
 # =============================================================================
 import yaml
-with open("example.yml", "w") as f:
-    yaml.dump(data, f)
-with open("example.yml" , "r")as f:
-    data = yaml.safe_load(f)
-    print(data)
+Text = "NEW YORK CITY"
+with open("Text.yaml", "a") as f:
+    append = yaml.dump(Text, f)
+    print(append)
+
+with open("Text.yaml", "r") as f:
+    read = yaml.safe_load(f)
+    print(read)
 # =================================================================================
 import random
 list = ["yahia","bilal","zakaria","mohamed"]
