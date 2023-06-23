@@ -83,11 +83,3 @@ S = R % 60
 
 print("Hours =", H, "Minutes =", M, "Seconds =", S)
 
-Text = "NEW YORK CITY"
-with open("Text.yaml", "a") as f:
-    append = yaml.dump(Text, f)
-    print(append)
-
-with open("Text.yaml", "r") as f:
-    read = yaml.safe_load(f)
-    print(read)
