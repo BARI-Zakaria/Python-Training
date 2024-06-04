@@ -7,7 +7,7 @@ import shutil
 # CREATE AN EMPTY SET AND LIST ALL FILES WITH THE 'GLOB' METHOD
 
 mySet=set()
-pathA = "C:\\Users\\hp\\Desktop\\Files"
+pathA = "Folder_Path"
 checkList = glob.glob1(pathA, '*.*')
 # mySet.update(test)
 
