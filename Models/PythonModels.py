@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 import glob
+
         #   TO GET YOUR LOCAL LOCATION
 print(os.getcwd())
 
@@ -47,7 +48,6 @@ for dirpath, dirnames, filenames in os.walk(paTH):
 
 # ==============================================================================
 
-
 import os
 print(dir(os))
 variable = os.getcwd()
@@ -74,8 +74,6 @@ path0 = os.path.basename(path)
 print(path0)
 path0 = os.path.join(path)
 print(path0)
-# path0 = os.path.exists(path)
-# print(path0)
 path0 = os.path.split(path)
 print(path0)
 path0 = os.path.isfile(path)
@@ -86,13 +84,17 @@ path0 = os.path.dirname(path)
 print(path0)
 path0 = os.path.normpath(path)
 print(path0)
+
 # ===========================================================================
+
 import subprocess
 P1 = subprocess.run("ls -l" , shell=True, capture_output=True, text=True)
 print(P1.stdout)
 P1 = subprocess.run("command" , shell=True , capture_outure=True , text=True)
 print(P1.stdout)
+
 # =============================================================================
+
 import yaml
 Text = "NEW YORK CITY"
 with open("Text.yaml", "a") as f:
@@ -102,7 +104,9 @@ with open("Text.yaml", "a") as f:
 with open("Text.yaml", "r") as f:
     read = yaml.safe_load(f)
     print(read)
+
 # =================================================================================
+
 import random
 list = ["yahia","bilal","zakaria","mohamed"]
 list = [True,False]
@@ -112,10 +116,12 @@ value = random.uniform(5,9)
 value = random.randint(3,9)
 value = random.choice(list)
 value = random.choices(list , k=3)
-random.shuffle(my_list)
-print(my_list)
+random.shuffle(list)
+print(list)
 print(value)
+
 # ===================================================================================
+
 import shutil
 shutil.copy("source.txt", "destination.txt")
 print("File copied.")
@@ -128,4 +134,5 @@ print("Archive created.")
 source_path = "C:\\Users\\Windows10\\OneDrive - OFPPT\\Documents\\Homework\\VR AND AR"
 destination_path = "C:\\Users\\Windows10\\OneDrive - OFPPT\\Bureau\\Python exercices"
 shutil.copy(source_path, destination_path)
+
 # ======================================================================================

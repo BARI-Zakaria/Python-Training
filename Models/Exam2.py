@@ -82,4 +82,3 @@ M = R // 60
 S = R % 60
 
 print("Hours =", H, "Minutes =", M, "Seconds =", S)
-
