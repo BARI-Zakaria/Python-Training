@@ -39,5 +39,5 @@ if chasseurInfos["capital"] > 0 :
         print("Vous avez perdu votre permis Mr.", name)
     else: 
         chasseurInfos["capital"] -= rslt
-        print("Il faut payer", rslt * 2, "Euro Mr.", name)
+        print("Il faut payer", rslt * 2, "Euro M.", name)
 
