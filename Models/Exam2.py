@@ -27,7 +27,7 @@ for x in range(1,nombre+1):
 print(n)
 
     #  GET THE SOMME OF THE SAME EXTENSION FILES SIZE 
-Path = r'C:\Users\Zakaria\Desktop\Régional\ExercicesPython'
+Path = r'Folder_Path'
 MyDic = dict()
 
 for dirpath, dirnames, filenames in os.walk(Path):
